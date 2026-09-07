@@ -1,0 +1,81 @@
+{
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/home",
+      "destination": "/website"
+    },
+    {
+      "source": "/proto",
+      "destination": "/prototype"
+    },
+    {
+      "source": "/attention",
+      "destination": "/console?firstrun=0#attention"
+    },
+    {
+      "source": "/record",
+      "destination": "/console?firstrun=0#record"
+    },
+    {
+      "source": "/team",
+      "destination": "/console?firstrun=0#team"
+    },
+    {
+      "source": "/sources",
+      "destination": "/console?firstrun=0#sources"
+    },
+    {
+      "source": "/settings",
+      "destination": "/console?firstrun=0#settings"
+    },
+    {
+      "source": "/review",
+      "destination": "/console?firstrun=0#review"
+    },
+    {
+      "source": "/channels",
+      "destination": "/setup#channels"
+    },
+    {
+      "source": "/people",
+      "destination": "/console?firstrun=0#team"
+    },
+    {
+      "source": "/context",
+      "destination": "/setup#context"
+    },
+    {
+      "source": "/tools",
+      "destination": "/setup#context"
+    },
+    {
+      "source": "/reading",
+      "destination": "/setup#reading"
+    },
+    {
+      "source": "/kit",
+      "destination": "/review-kit"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(console|setup|install|hello|website|prototype|review-kit|index)?",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)\\.html",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store, must-revalidate"
+        }
+      ]
+    }
+  ]
+}
